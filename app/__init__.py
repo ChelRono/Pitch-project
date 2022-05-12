@@ -5,6 +5,7 @@ from .main import main as main_blueprint
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from app import app as app
+from flask_uploads import UploadSet,configure_uploads,IMAGES
 
 
 
@@ -21,8 +22,7 @@ sqlalchemy = SQLAlchemy()
 
 
 
-
-
+photos = UploadSet('photos',IMAGES)
 def create_app(config_name):
     app = Flask(__name__)
 
@@ -30,6 +30,10 @@ def create_app(config_name):
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
 
+
+    # configure UploadSet
+    configure_uploads(app,photos)
+    
     # Creating the app configurations
     app.config.from_object(config_options[config_name])
 
