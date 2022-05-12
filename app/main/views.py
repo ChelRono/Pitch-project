@@ -5,7 +5,7 @@ from ..models import  User
 from .forms import UpdateProfile
 from .. import db
 
-# Views
+
 @main.route('/')
 def index():
 
