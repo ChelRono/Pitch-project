@@ -8,9 +8,11 @@
 	<link rel="stylesheet" href="{{url_for('static',filename='css/pitch.css')}}">
 </head>
 <body>
-	<nav class="main-nav">
+	<nav>
+		<div class="topnav">
 	
 			
+		<button><a href="/"> Home</a></button>
 		<button><a href="/pitches"> Pitches</a></button>
 		<button><a href="/profile"> Profile</a></button>
 		<button> <a href="/authenticate/registerUser"> Register</a> </button>
@@ -25,7 +27,7 @@
 			<!-- <li><a href="{{url_for('auth.login')}}">Sign in</a></li> -->
 			{%endif%}
 		  </ul>
-		
+		</div>
 	</nav>
 
 <div class="form-group">
