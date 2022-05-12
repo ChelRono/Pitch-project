@@ -4,7 +4,7 @@ from config import config_options
 from .main import main as main_blueprint
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
-from app import app
+from app import app as app
 
 
 login_manager = LoginManager()
