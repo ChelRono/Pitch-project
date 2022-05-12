@@ -1,0 +1,17 @@
+body{
+    background-color:rgb(6, 6, 70);
+
+}
+.header{
+    font-size: large;
+    color: aliceblue;
+    margin: auto;
+    width: 60%;
+    margin-top: 20%;
+    text-align: justify;
+    
+}
+.pitch{
+    width:80%;
+    margin: auto;
+}

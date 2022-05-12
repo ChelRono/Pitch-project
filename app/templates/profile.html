@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+
+
+{% block header %}
+	<h1>{% block title %}One Minute Pitch - User Profile{% endblock %}</h1>
+{% endblock %}
+
+
+<!-- Content block -->
+{% block content %}
+
+
+<div class="container profile-page">
+	<div class="profile">
+	    <section id="wrapper">
+	        <header id="header">
+	            <a href="">
+	                <img id="avatar" class="2x" src="">
+	            </a>
+	            <h1 class="mb0">Username Here</h1> 
+	            <p class="small m0">My bio should just say "caffeinated"</p>
+	        </header>
+	    </section>
+	    <div id="wrapper" class="home">
+		    <div class="archive">
+		    	<h3>My Pitches</h3>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content mt30 mb30">
+					<div class="tab-pane active" id="technologies">
+						<ul id="post-list">
+                
+			                <li>
+			                    <a href="">
+			                        <aside class="dates">Nov 25</aside>
+			                    </a>
+			                    <a href="">
+			                        Pitch Name
+			                    </a>
+			                    <h2 class="headline">
+			                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			                    </h2>
+			                </li>
+			                
+			            </ul>
+					</div>
+					<div class="tab-pane" id="business">
+					</div>
+					<div class="tab-pane" id="project">
+					</div>
+					<div class="tab-pane" id="product">
+					</div>
+				</div>
+	        </div>
+    	</div>
+	</div>
+</div>
+
+
+
+
+
+{% endblock%}
