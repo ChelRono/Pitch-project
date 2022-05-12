@@ -1,4 +1,4 @@
-from app import app as app
+from app.app import app 
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from config import config_options
