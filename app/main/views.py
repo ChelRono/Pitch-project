@@ -25,6 +25,6 @@ def profile():
 # 	return render_template('pitch.html')
 
 @main.route('/pitches', methods = ['GET','POST'])
-@login_required
+# @login_required
 def pitches():
 	return render_template('pitch.html')

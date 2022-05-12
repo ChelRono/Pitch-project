@@ -8,7 +8,25 @@
 	<link rel="stylesheet" href="{{url_for('static',filename='css/pitch.css')}}">
 </head>
 <body>
+	<nav class="main-nav">
+	
+			
+		<button><a href="/pitches"> Pitches</a></button>
+		<button><a href="/profile"> Profile</a></button>
+		<button> <a href="/authenticate/registerUser"> Register</a> </button>
+		<button><a class="cta" href="/authenticate/login">Log In</a></button>
 
+
+		<ul class="nav navbar-nav navbar-right">
+			{% if current_user.is_authenticated %}
+			<li style="color:white;padding:15px;">{{current_user.username}}</li>
+			<li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+			{% else %}
+			<!-- <li><a href="{{url_for('auth.login')}}">Sign in</a></li> -->
+			{%endif%}
+		  </ul>
+		
+	</nav>
 
 <div class="form-group">
   
