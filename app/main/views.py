@@ -6,6 +6,7 @@ from .forms import UpdateProfile
 from .. import db,photos
 
 
+
 @main.route('/')
 def index():
 
